@@ -20,8 +20,11 @@ export default class StringCalculator {
       string = string.split(delimiter).join(",");
     });
 
+    // reduce is like a foreach, 0 is value for previous
     return string
     .split(",")
-    .reduce((acc, number) => acc + Number.parseInt(number), 0);
+    .reduce((previous, number) => previous + Number.parseInt(number), 0);
+
+
   }
 }

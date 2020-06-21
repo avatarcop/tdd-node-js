@@ -3,10 +3,10 @@ import StringCalculator from "./stringCalculator";
 describe("StringCalculator", () => {
   describe("add", () => {
     it("should return zero given empty string", () => {
-      const sut = new StringCalculator();
+      const sut = new StringCalculator(); // Arrange
 
-      const result = sut.add("");
-      expect(result).toBe(0);
+      const result = sut.add(""); // Act
+      expect(result).toBe(0); // Assert
     });
 
     it("should return the number in integer given single number", () => {
